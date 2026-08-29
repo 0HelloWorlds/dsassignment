@@ -35,7 +35,32 @@ st.markdown("""
 .stApp, .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6, .stApp p, .stApp label, .stApp span, .stApp div, .stApp small {
     color: #f8fafc;
 }
+.stCaption,
+[data-testid="stCaptionContainer"] {
+    color: #ffffff !important;
+}
 
+/* Markdown text */
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] span {
+    color: #ffffff !important;
+}
+
+/* Tabs */
+button[data-baseweb="tab"] {
+    color: #ffffff !important;
+}
+
+/* Selectbox and input labels */
+[data-testid="stWidgetLabel"] label,
+[data-testid="stWidgetLabel"] p {
+    color: #ffffff !important;
+}
+
+/* Dataframe text */
+[data-testid="stDataFrame"] {
+    color: #ffffff !important;
+}
 .main-title {
     font-size: 44px;
     font-weight: 800;
